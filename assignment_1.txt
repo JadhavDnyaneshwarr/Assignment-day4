@@ -1,0 +1,68 @@
+#!/bin/bash
+
+#Task1- Generating two digit number-
+
+a=$((RANDOM%89+10));
+echo "the two digit random number is $a";
+echo " ";
+
+#Task2- Generting three digit number-
+b=$((RANDOM%899+100));
+echo "Three digit random number is $b";
+echo " ";
+
+#ASSIGNMENT
+
+#1. Using Random Function (( RANDOM )) to get Single Digit
+
+c=$((RANDOM%10));
+echo "the single digit random number is $c";
+echo " ";
+
+#2. Using Random to get Dice Number between 1 to 6
+
+d=$((RANDOM%5+1));
+echo "the dice number is $d";
+echo " ";
+
+#3. Adding two Random Dice Number
+
+e=$((RANDOM%5+1));
+f=$(($d+$e));
+echo "the first dice number is $d";
+echo "the second dice number is $e";
+echo "the dice number is $f";
+echo " ";
+
+
+#4. sum and the average of 5 Random 2 Digit values
+
+g=$((RANDOM%5+1));
+h=$((RANDOM%5+1));
+i=$((RANDOM%5+1));
+j=$((RANDOM%5+1));
+k=$((RANDOM%5+1));
+sum=$(($g+$h+$i+$j+$k));
+avg=$(($sum/5));
+echo $g, $h, $i, $j, $k;
+echo "the sum 5 random two digit number is $sum and average is $avg";
+echo " ";
+
+#5. Unit conversion-
+#a) inch to ft
+
+# 1ft = 12 inch 
+ft=12;
+inch=42;
+inchft=$(($inch/$ft));
+echo "the 42inch is $inchft ft";
+echo " ";
+
+#b) feet to meter
+
+# 1ft = 0.3048meter
+ft=$((60 * 40));
+meter=0.3048;
+meters=$(($ft * $meter));
+echo "the Rectangular Plot of 60 feet x 40 feet is $meters meters";
+echo " ";
