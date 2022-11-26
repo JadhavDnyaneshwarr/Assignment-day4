@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#addition and substraction with store value-
+
+x=300;
+y=200;
+z=$(($x+$y));
+w=$(($x-$y));
+echo "The addition of x and y is $z";
+echo "The substraction of x and y is $w";
+
+#adddition and sustraction with random value-
+
+a=$((RANDOM%5));
+b=$((RANDOM%5));
+C=$(($a+$b));
+D=$(($a-$b));
+echo "The addition of a and b is $C";
+echo "The substraction of a and b is $D";
+
+#addition and substraction with user input-
+
+read -p "Enter the value of e: " e;
+read -p "Enter the value of f: " f;
+g=$(($e+$f));
+h=$(($e-$f));
+echo "The addition of e and f is $g";
+echo "The substraction of e and f is $h";
+
+#getting single digit random number
+
+a=$((RANDOM%5));
+echo "the single digit random number is $a";
