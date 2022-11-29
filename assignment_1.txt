@@ -62,7 +62,14 @@ echo " ";
 
 # 1ft = 0.3048meter
 ft=$((60 * 40));
-meter=0.3048;
+meter=3281;
+a=10000;
 meters=$(($ft * $meter));
-echo "the Rectangular Plot of 60 feet x 40 feet is $meters meters";
-echo " ";
+ft_to_meter=$((echo $meters $a | awk '{ print $1/$2}'))
+echo "the Rectangular Plot of 60 feet x 40 feet is $ft_to_meter meters";
+echo " ------------";
+
+a=3
+b=2
+c=$((echo  $a $b | awk '{ print $1/$2}'))
+echo $c
